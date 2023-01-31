@@ -32,6 +32,7 @@ users_info = get_user_information(users, headless=True)
 # set your .env file with SCWEET_EMAIL, SCWEET_USERNAME and SCWEET_PASSWORD variables and provide its path
 env_path = ".env"
 
-following = get_users_following(users=users, env=env_path, verbose=0, headless=True, wait=2, limit=50, file_path=None)
+following = get_users_following(users=users, env=env_path, verbose=0, headless=True, wait=10, limit=50, file_path=None)
 
-followers = get_users_followers(users=users, env=env_path, verbose=0, headless=True, wait=1, limit=50, file_path=None)
+followers = get_users_followers(users=users, env=env_path, verbose=0, headless=True, wait=10, limit=50, file_path=None)
+
